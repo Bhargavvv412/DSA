@@ -1,7 +1,3 @@
-#include <iostream>
-#include<bits/stdc++.h>
-using namespace std;
-
 // Example 1:
 // Input: arr[] = {2,5,1,3,0};
 // Output: 5
@@ -11,6 +7,10 @@ using namespace std;
 // Input: arr[] = {8,10,5,7,9};
 // Output: 10
 // Explanation: 10 is the largest element in the array. 
+
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
 
 // Brute Force Apporach
 
