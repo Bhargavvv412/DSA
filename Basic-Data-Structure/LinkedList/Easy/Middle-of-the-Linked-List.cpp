@@ -35,8 +35,16 @@ void addLL(int data){
     }
 }
 
-void middelElements{
-
+Node* middelElements(Node* head){
+    if (head == nullptr || head->next == nullptr) return head;
+        Node* slow = head;
+        Node* fast = head;
+        
+        while (fast != nullptr && fast->next != nullptr) {
+            slow = slow->next;
+            fast = fast->next->next;
+        }
+        return slow;
 }
 
 void print(){
@@ -55,5 +63,10 @@ int main(){
     addLL(50);
     addLL(60);
     print();
+    middelElements(head);Node* mid = middelElements(head);
+    while (mid != nullptr) {
+        cout << "\nMiddle element: " << mid->data << endl;
+        mid = mid->next;
+    }
     return 0;
 }
